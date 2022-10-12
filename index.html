@@ -1,71 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Sign Up</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <img src="./buddah_background.png">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Odin Sign Up</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <img src="./buddah_background.png">
 
-    <div class="sign-up">
-        <div class="header">
-            <h1>SHUT UP AND MEDITATE</h1> <p>Sign up today to meditate alongside some of the world renowed gurus who will teach you about life, compassion, love, spirituality and more:</p>
-        </div>
-        <div class="form">
-            <form id="signupform" method="post" action="http://httpbin.org/post">
+        <div class="sign-up">
+            <div class="header">
+                <h1>SHUT UP AND MEDITATE</h1> 
+                <p>Sign up today to meditate alongside some of the world renowed gurus who will teach you about life, compassion, love, spirituality and more:</p>
+            </div>
+            <div class="form">
+                <form id="signupform" method="post" action="http://httpbin.org/post">
 
-                <h2>Sign Up Here</h2>
+                    <h2>Sign Up Here</h2>
 
-                <div class="formset">
-                    <label for="Fname">
-                        First Name: *
-                        <input type="text" id="Fname" name="Fname" required>
-                       
-                    </label>
-                    <label for="Lname">
-                        Last Name:  *
-                        <input type="text" id="Lname" name="Lname" required>
-                       
-                    </label>
-                </div>
-
-                <div class="formset">
-                    <label for="email">
-                        Email:  *
-                        <input type="email" id="email" name="email" required>
+                    <div class="formset">
+                        <label for="Fname">
+                            First Name: *
+                            <input type="text" id="Fname" name="Fname" required>
                         
-                    </label>
-
-                    <label for="phone">
-                        Phone Number:  *
-                        <input type="tel" id="phone" name="phone" required>
-                       
-                    </label>
-                </div>
-
-                <div class="formset">
-                    <label for="pwd">
-                        Password:  *
-                        <input type="password" id="pwd" name="pwd" required>
+                        </label>
+                        <label for="Lname">
+                            Last Name:  *
+                            <input type="text" id="Lname" name="Lname" required>
                         
-                    </label>
+                        </label>
+                    </div>
 
-                    <label for="pwd">
-                        Retype Password:  *
-                        <input type="password" id="pwd" name="pwd" required>
+                    <div class="formset">
+                        <label for="email">
+                            Email:  *
+                            <input type="email" id="email" name="email" required>
+                            
+                        </label>
+
+                        <label for="phone">
+                            Phone Number:  *
+                            <input type="tel" id="phone" name="phone" required>
                         
-                    </label>
-                </div>
-            </form>
-        </div>
-        <div class="bottom">
-            <input type="submit" class="submit" form="signupform">
-        </div>
+                        </label>
+                    </div>
 
-    </div>
-    
-</body>
+                    <div class="formset">
+                        <label for="pwd">
+                            Password:  *
+                            <input type="password" id="pwd" name="pwd" onChange='onChange()' required>
+                            
+                        </label>
+
+                        <label for="pwd">
+                            Retype Password:  *
+                            <input type="password" id="confirm" name="confirm" onChange='onChange()' required>
+                            
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom">
+                <input type="submit" class="submit" form="signupform">
+            </div>
+
+        </div>
+        <script src="./passwordcheck.js"></script>
+    </body>
 </html>
