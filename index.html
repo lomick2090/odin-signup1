@@ -8,12 +8,16 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <img src="./buddah_background.png">
+        <div class="imagepanel">
+            <img src="./buddah_background.png">
+
+            <div class="banner">GoMeditate.net</div>
+        </div>
 
         <div class="sign-up">
             <div class="header">
                 <h1>SHUT UP AND MEDITATE</h1> 
-                <p>Sign up today to meditate alongside some of the world renowed gurus who will teach you about life, compassion, love, spirituality and more:</p>
+                <p>Sign up today to meditate alongside some of the world's most renowed gurus who will teach you about life, compassion, love, spirituality and more:</p>
             </div>
             <div class="form">
                 <form id="signupform" method="post" action="http://httpbin.org/post">
@@ -64,9 +68,12 @@
             </div>
             <div class="bottom">
                 <input type="submit" class="submit" form="signupform">
+
+                <p class="blurb">Already have an account? <a href="./index.html">Login Here</a></p>
             </div>
 
         </div>
         <script src="./passwordcheck.js"></script>
+
     </body>
 </html>
